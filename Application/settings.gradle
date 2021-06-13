@@ -1,3 +1,5 @@
+include ':preferences'
+include ':styles'
 include ':inappreview'
 include ':app'
 rootProject.name = "code"
