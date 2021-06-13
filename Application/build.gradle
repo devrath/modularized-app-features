@@ -21,6 +21,9 @@ buildscript {
             'cardView'                    : '1.0.0',
             'coreKtx'                     : "1.5.0",
             'constraintLayout'            : "2.0.4",
+
+            'playCore'                    : '1.8.3',
+            'playCoreKtx'                 : '1.8.1',
     ]
     repositories {
         google()
