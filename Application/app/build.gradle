@@ -32,7 +32,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    dataBinding {
+    viewBinding {
         enabled = true
     }
 }
@@ -55,8 +55,4 @@ dependencies {
 
     implementation("com.google.dagger:hilt-android:$hilt_version")
     kapt("com.google.dagger:hilt-android-compiler:$hilt_version")
-
-    // Play core
-    implementation "com.google.android.play:core:${versions.playCore}"
-    implementation "com.google.android.play:core-ktx:${versions.playCoreKtx}"
 }
