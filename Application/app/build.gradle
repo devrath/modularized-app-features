@@ -42,7 +42,7 @@ dependencies {
 
     implementation project(':core_network')
     implementation project(':core_models')
-    implementation project(':feature_login')
+    implementation project(':core_di')
 
     // application dependencies
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
