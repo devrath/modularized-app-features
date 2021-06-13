@@ -10,12 +10,15 @@ buildscript {
             'targetAndCompileSdk'         : 30,
             'buildtools'                  : '30.0.3',
 
-            // Main app configurations
-            'coreKtx'                    : '1.5.0',
+            // App dependencies version
+            'coreKtx'                     : '1.5.0',
             'appcompat'                   : '1.3.0',
             'material'                    : '1.3.0',
             'constraintLayout'            : '2.0.4',
 
+            // Test version
+            'extJunit'                    : '1.1.2',
+            'espressoCore'                : '3.3.0',
 
     ]
 
