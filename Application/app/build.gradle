@@ -40,8 +40,8 @@ android {
 
 dependencies {
 
-    implementation project(':network')
-    implementation project(':core')
+    implementation project(':core_network')
+    implementation project(':core_models')
     implementation project(':feature_login')
 
     // application dependencies
