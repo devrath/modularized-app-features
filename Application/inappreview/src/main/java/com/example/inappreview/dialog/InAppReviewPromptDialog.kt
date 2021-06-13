@@ -12,7 +12,6 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.DialogFragment
 import com.example.inappreview.R
 import com.example.inappreview.databinding.FragmentInAppReviewPromptBinding
-import com.example.inappreview.manager.InAppReviewManager
 import com.example.inappreview.preferences.InAppReviewPreferences
 import com.example.preferences.GeneralSettingsPrefs
 import dagger.hilt.android.AndroidEntryPoint
@@ -38,11 +37,6 @@ class InAppReviewPromptDialog : DialogFragment() {
   @Inject
   lateinit var generalSettingsPrefs: GeneralSettingsPrefs
 
-  /**
-   * Manager used to trigger the In App Review prompt if needed.
-   * */
-  @Inject
-  lateinit var inAppReviewManager: InAppReviewManager
 
   private var binding: FragmentInAppReviewPromptBinding? = null
 
@@ -71,7 +65,6 @@ class InAppReviewPromptDialog : DialogFragment() {
 
   private fun onLeaveReviewTapped() {
     preferences.setUserRatedApp(true)
-    inAppReviewManager.startReview(requireActivity())
     dismissAllowingStateLoss()
   }
 

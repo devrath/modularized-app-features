@@ -2,8 +2,6 @@ package com.example.inappreview.di
 
 import android.content.Context
 import android.content.SharedPreferences
-import com.google.android.play.core.review.ReviewManager
-import com.google.android.play.core.review.ReviewManagerFactory
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -29,12 +27,4 @@ class InAppReviewProviders {
     return context.getSharedPreferences(KEY_IN_APP_REVIEW_PREFERENCES, Context.MODE_PRIVATE)
   }
 
-  /**
-   * Provides Review Manager
-   * */
-  @Provides
-  @Singleton
-  fun provideReviewManager(@ApplicationContext context: Context): ReviewManager {
-    return ReviewManagerFactory.create(context)
-  }
 }

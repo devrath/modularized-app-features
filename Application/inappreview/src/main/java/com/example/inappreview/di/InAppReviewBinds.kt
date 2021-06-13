@@ -1,7 +1,5 @@
 package com.example.inappreview.di
 
-import com.example.inappreview.manager.InAppReviewManager
-import com.example.inappreview.manager.InAppReviewManagerImpl
 import com.example.inappreview.preferences.InAppReviewPreferences
 import com.example.inappreview.preferences.InAppReviewPreferencesImpl
 import dagger.Binds
@@ -26,12 +24,5 @@ abstract class InAppReviewBinds {
     inAppReviewPreferencesImpl: InAppReviewPreferencesImpl
   ): InAppReviewPreferences
 
-  /**
-   * Provides In App Review flow wrapper.
-   * */
-  @Binds
-  @Singleton
-  abstract fun bindInAppReviewManager(
-    inAppReviewManagerImpl: InAppReviewManagerImpl
-  ): InAppReviewManager
+
 }
