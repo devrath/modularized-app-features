@@ -25,6 +25,12 @@ buildscript {
             // Life cycle version
             'lifecycle'                   : '2.4.0-alpha01',
 
+            // Timber version
+            'timber'                      : '4.7.1',
+
+            // leak-canary version
+            'leakcanary'                  : '2.7',
+
     ]
 
 
