@@ -1,6 +1,10 @@
-include ':feature-login'
-include ':core-di'
-include ':core-models'
-include ':core-network'
 include ':app'
+
+include ':core'
+include ':core:models'
+include ':core:network'
+
+include ':features'
+include ':features:login'
+
 rootProject.name = "code"
