@@ -36,6 +36,8 @@ android {
 
 dependencies {
 
+    implementation project(":features:login")
+
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation "androidx.core:core-ktx:$versions.coreKtx"
     implementation "androidx.appcompat:appcompat:$versions.appcompat"
