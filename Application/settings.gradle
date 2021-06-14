@@ -1,3 +1,4 @@
+include ':features:base'
 include ':app'
 
 include ':core'
