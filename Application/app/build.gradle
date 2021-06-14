@@ -58,9 +58,9 @@ dependencies {
     kapt "com.google.dagger:hilt-compiler:$hilt_version"
 
     // Navigation
-    implementation "androidx.navigation:navigation-fragment-ktx:$kotlin_version"
-    implementation "androidx.navigation:navigation-ui-ktx:$kotlin_version"
-    implementation "androidx.navigation:navigation-dynamic-features-fragment:$kotlin_version"
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigation_safe_args_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigation_safe_args_version"
+    implementation "androidx.navigation:navigation-dynamic-features-fragment:$navigation_safe_args_version"
 
     // Life cycle
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$versions.lifecycle"
