@@ -1,3 +1,4 @@
+include ':feature-login'
 include ':core_di'
 include ':core_models'
 include ':core_network'
