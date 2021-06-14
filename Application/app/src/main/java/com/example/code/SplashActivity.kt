@@ -6,9 +6,15 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import com.example.code.databinding.ActivitySplashBinding
 import dagger.hilt.android.AndroidEntryPoint
+import timber.log.Timber
+import java.lang.Exception
 
 @AndroidEntryPoint
 class SplashActivity : AppCompatActivity() {
+
+    companion object {
+        const val FEATURE_ON_BOARDING = "com.kienht.dagger.hilt.feature.FeatureActivity"
+    }
 
     private lateinit var binding: ActivitySplashBinding
 
@@ -22,8 +28,13 @@ class SplashActivity : AppCompatActivity() {
 
     private fun onClickListeners() {
         binding.buttonFeature.setOnClickListener {
-            val clazz = Class.forName("com.kienht.dagger.hilt.feature.FeatureActivity")
-            // startActivity(Intent(this, clazz))
+            try {
+                Class.forName(FEATURE_ON_BOARDING)?.let { feature ->
+                    Timber.d("Launch activity$feature")
+                }
+            }catch (exception : Exception){
+                Timber.e("Error in launching feature: $exception")
+            }
         }
     }
 
