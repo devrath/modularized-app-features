@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="movies_description_text_size">16sp</dimen>
+    <dimen name="movies_description_margin_start">8dp</dimen>
+    <dimen name="movies_description_margin_end">8dp</dimen>
+    <dimen name="header_margin_start">8dp</dimen>
+    <dimen name="header_margin_top">40dp</dimen>
+    <dimen name="header_margin_end">8dp</dimen>
+    <dimen name="header_text_size">40sp</dimen>
+    <dimen name="banner_image_margin_start">8dp</dimen>
+    <dimen name="banner_image_margin_top">32dp</dimen>
+    <dimen name="banner_image_margin_end">8dp</dimen>
+    <dimen name="password_id_padding_left">60dp</dimen>
+    <dimen name="user_name_padding_left">60dp</dimen>
+</resources>

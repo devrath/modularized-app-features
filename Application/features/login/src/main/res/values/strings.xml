@@ -1,2 +1,9 @@
 <resources>
+    <string name="my_movies">My Movies</string>
+    <string name="learn_about_movies_from_anywhere">learn about movies from anywhere</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="don_t_you_have_an_account_create">Don\'t you have an account? Create</string>
 </resources>

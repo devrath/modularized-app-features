@@ -30,15 +30,15 @@ class LoginActivity : BaseActivity() {
     }
 
     private fun onClickListeners() {
-        binding.buttonFeature.setOnClickListener {
+       /* binding.buttonFeature.setOnClickListener {
             try {
-                /*Class.forName(FEATURE_ON_BOARDING)?.let { feature ->
+                *//*Class.forName(FEATURE_ON_BOARDING)?.let { feature ->
                     Timber.d("Launch activity$feature")
-                }*/
+                }*//*
             }catch (exception : Exception){
                 Timber.e("Error in launching feature: $exception")
             }
-        }
+        }*/
     }
 
     private fun setContentForScreen() {
