@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_feature_width">86dp</dimen>
+    <dimen name="button_feature_height">86dp</dimen>
+    <dimen name="button_feature_margin_start">8dp</dimen>
+    <dimen name="button_feature_margin_top">14dp</dimen>
+    <dimen name="button_feature_margin_end">8dp</dimen>
+    <dimen name="swipe_up_margin_start">8dp</dimen>
+    <dimen name="swipe_up_margin_end">8dp</dimen>
+    <dimen name="swipe_up_text_size">18sp</dimen>
+    <dimen name="login_welcome_margin_start">8dp</dimen>
+    <dimen name="login_welcome_margin_top">44dp</dimen>
+    <dimen name="login_welcome_margin_end">8dp</dimen>
+    <dimen name="learning_text_margin_end">8dp</dimen>
+    <dimen name="textView_margin_start">8dp</dimen>
+    <dimen name="textView_margin_top">40dp</dimen>
+    <dimen name="textView_margin_end">8dp</dimen>
+    <dimen name="learning_text_size">16sp</dimen>
+    <dimen name="welcome_text_size">30sp</dimen>
+</resources>
