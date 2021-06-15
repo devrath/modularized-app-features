@@ -35,11 +35,9 @@ class SplashActivity : AppCompatActivity() {
     private fun onClickListeners() {
         binding.buttonFeature.setOnClickListener {
             try {
-               /* Class.forName(FEATURE_LOGIN)?.let { feature ->
-                    startActivity(Intent(this, feature))
-                }*/
-                val feature = Class.forName(FEATURE_LOGIN)
-                startActivity(Intent(this@SplashActivity, feature))
+                Class.forName(FEATURE_LOGIN)?.let { feature ->
+                    startActivity(Intent(this@SplashActivity, feature))
+                }
             }catch (exception : Exception){
                 Timber.e("Error in launching feature: $exception")
             }
