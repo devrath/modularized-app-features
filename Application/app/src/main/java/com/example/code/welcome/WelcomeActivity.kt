@@ -1,4 +1,4 @@
-package com.example.code
+package com.example.code.welcome
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -11,7 +11,7 @@ import timber.log.Timber
 import java.lang.Exception
 
 @AndroidEntryPoint
-class SplashActivity : AppCompatActivity() {
+class WelcomeActivity : AppCompatActivity() {
 
     companion object {
         const val FEATURE_LOGIN = "com.example.login.LoginActivity"
@@ -19,7 +19,7 @@ class SplashActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySplashBinding
 
-    private lateinit var viewmodel : SplashViewModel
+    private lateinit var viewmodel : WelcomeViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,14 +29,14 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun setViewModel() {
-        viewmodel = ViewModelProvider(this@SplashActivity).get(SplashViewModel::class.java)
+        viewmodel = ViewModelProvider(this@WelcomeActivity).get(WelcomeViewModel::class.java)
     }
 
     private fun onClickListeners() {
         binding.buttonFeature.setOnClickListener {
             try {
                 Class.forName(FEATURE_LOGIN)?.let { feature ->
-                    startActivity(Intent(this@SplashActivity, feature))
+                    startActivity(Intent(this@WelcomeActivity, feature))
                 }
             }catch (exception : Exception){
                 Timber.e("Error in launching feature: $exception")
