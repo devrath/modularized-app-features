@@ -32,6 +32,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -53,4 +56,11 @@ dependencies {
     // Hilt dependencies
     implementation "com.google.dagger:hilt-android:$hilt_version"
     kapt "com.google.dagger:hilt-compiler:$hilt_version"
+
+    // Timber
+    implementation "com.jakewharton.timber:timber:$versions.timber"
+
+    // Leak canary
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:$versions.leakcanary"
+
 }
