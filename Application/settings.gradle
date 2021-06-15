@@ -1,3 +1,4 @@
+include ':features:movies'
 include ':app'
 
 include ':core'
