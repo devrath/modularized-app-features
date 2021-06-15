@@ -17,4 +17,5 @@
     <dimen name="textView_margin_end">8dp</dimen>
     <dimen name="learning_text_size">16sp</dimen>
     <dimen name="welcome_text_size">30sp</dimen>
+    <dimen name="swipe_up_margin_bottom">15dp</dimen>
 </resources>

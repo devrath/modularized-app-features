@@ -61,11 +61,11 @@
             android:layout_width="wrap_content"
             android:layout_height="244px"
             android:background="@drawable/ic_bottom_welcome"
+            android:contentDescription="@string/str_swipe_to_login"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="PxUsage"
-            android:contentDescription="@string/str_swipe_to_login" />
+            tools:ignore="PxUsage" />
 
         <Button
             android:id="@+id/button_feature"
@@ -86,16 +86,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/swipe_up_margin_start"
+            android:layout_marginLeft="@dimen/swipe_up_margin_start"
+            android:layout_marginTop="54dp"
             android:layout_marginEnd="@dimen/swipe_up_margin_end"
+            android:layout_marginRight="@dimen/swipe_up_margin_end"
+            android:layout_marginBottom="@dimen/swipe_up_margin_bottom"
             android:fontFamily="@font/montserrat_semibold"
             android:text="@string/str_swipe_to_login"
-            android:textSize="@dimen/swipe_up_text_size"
             android:textColor="@android:color/white"
+            android:textSize="@dimen/swipe_up_text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button_feature"
-            android:layout_marginLeft="@dimen/swipe_up_margin_start"
-            android:layout_marginRight="@dimen/swipe_up_margin_end" />
+            app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
