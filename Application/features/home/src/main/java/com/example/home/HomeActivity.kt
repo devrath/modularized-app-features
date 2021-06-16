@@ -4,28 +4,34 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupWithNavController
+import com.example.home.databinding.ActivityHomeBinding
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {
 
     private val navController: NavController by lazy { findNavController(R.id.fragment_nav_host) }
 
+    private lateinit var binding: ActivityHomeBinding
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        binding = ActivityHomeBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         setupNavigation()
     }
 
     private fun setupNavigation() {
-        btm_nav_main.setupWithNavController(navController)
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragment_nav_host) as NavHostFragment
+        binding.btmNavMain.setupWithNavController(navHostFragment.navController)
         changeBottomNavigationFragment()
     }
 
     private fun changeBottomNavigationFragment() {
-        btm_nav_main.setOnNavigationItemSelectedListener {
-            if (btm_nav_main.menu.findItem(it.itemId).isChecked) {
+        binding.btmNavMain.setOnNavigationItemSelectedListener {
+            if (binding.btmNavMain.menu.findItem(it.itemId).isChecked) {
                 false
             } else {
                 when (it.itemId) {
