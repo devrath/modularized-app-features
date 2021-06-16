@@ -43,8 +43,6 @@ dependencies {
     implementation project(":core")
 
     // Navigation
-    implementation "androidx.navigation:navigation-fragment-ktx:$navigation_safe_args_version"
-    implementation "androidx.navigation:navigation-ui-ktx:$navigation_safe_args_version"
     implementation "androidx.navigation:navigation-dynamic-features-fragment:$navigation_safe_args_version"
 
     // Hilt dependencies
