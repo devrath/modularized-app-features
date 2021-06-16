@@ -39,32 +39,15 @@ android {
 }
 
 dependencies {
-
     implementation project(":features:base")
-
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation "androidx.core:core-ktx:$versions.coreKtx"
-    implementation "androidx.appcompat:appcompat:$versions.appcompat"
-    implementation "com.google.android.material:material:$versions.material"
+    implementation project(":core")
 
     // Navigation
-    implementation "androidx.navigation:navigation-fragment-ktx:$versions.navigation"
-    implementation "androidx.navigation:navigation-ui-ktx:$versions.navigation"
-
-    // Unit testing
-    testImplementation 'junit:junit:4.+'
-
-    // Instrumentation testing
-    androidTestImplementation "androidx.test.ext:junit:$versions.extJunit"
-    androidTestImplementation "androidx.test.espresso:espresso-core:$versions.espressoCore"
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigation_safe_args_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigation_safe_args_version"
+    implementation "androidx.navigation:navigation-dynamic-features-fragment:$navigation_safe_args_version"
 
     // Hilt dependencies
     implementation "com.google.dagger:hilt-android:$hilt_version"
     kapt "com.google.dagger:hilt-compiler:$hilt_version"
-
-    // Timber
-    implementation "com.jakewharton.timber:timber:$versions.timber"
-
-    // Leak canary
-    debugImplementation "com.squareup.leakcanary:leakcanary-android:$versions.leakcanary"
 }
