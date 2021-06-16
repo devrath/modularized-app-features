@@ -1,3 +1,4 @@
+include ':extensions'
 include ':features:home:featurethree'
 include ':features:home:featuretwo'
 include ':features:home:featureone'
