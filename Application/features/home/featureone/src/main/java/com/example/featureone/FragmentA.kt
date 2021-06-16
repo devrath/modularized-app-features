@@ -14,10 +14,14 @@ import com.example.featureone.databinding.FragmentABinding.inflate
 
 class FragmentA : BaseFragment<FragmentABinding>(FragmentABinding::inflate) {
 
+    companion object {
+        const val SCREEN_NAV = "myApp://fragmentD"
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.switchId.setOnClickListener {
-            val uri = Uri.parse("myApp://fragmentD")
+            val uri = Uri.parse(SCREEN_NAV)
             findNavController().navigate(uri)
         }
     }

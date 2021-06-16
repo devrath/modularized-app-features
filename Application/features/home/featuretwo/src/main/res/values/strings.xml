@@ -4,5 +4,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="feature_two_nfragment_c">Feature Two\nFragment C</string>
     <string name="feature_two_nfragment_d">Feature two\nFragment D</string>
+    <string name="open_feature_one_screen">Open feature one screen</string>
 
 </resources>
