@@ -40,6 +40,7 @@ dependencies {
     implementation "androidx.core:core-ktx:$versions.coreKtx"
     implementation "androidx.appcompat:appcompat:$versions.appcompat"
     implementation "com.google.android.material:material:$versions.material"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // Unit testing
     testImplementation 'junit:junit:4.+'
