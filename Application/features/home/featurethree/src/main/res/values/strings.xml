@@ -2,5 +2,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="feature_three_nfragment_f">Feature Three\nFragment F</string>
+    <string name="feature_three_nfragment_e">Feature Three\nFragment E</string>
 
 </resources>

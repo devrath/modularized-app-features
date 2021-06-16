@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">navigation</string>
+    <string name="feature_one">Feature One</string>
+    <string name="feature_two">Feature Two</string>
+    <string name="feature_three">Feature Three</string>
 </resources>

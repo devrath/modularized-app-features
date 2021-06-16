@@ -4,13 +4,14 @@
     <item
         android:id="@+id/nav_feature_one"
         android:icon="@drawable/feature_one_icon"
-        android:title="Feature A" />
+        android:title="@string/feature_one" />
     <item
         android:id="@+id/nav_feature_two"
         android:icon="@drawable/feature_two_icon"
-        android:title="Feature B" />
+        android:title="@string/feature_two" />
     <item
         android:id="@+id/nav_feature_three"
         android:icon="@drawable/feature_three_icon"
-        android:title="Feature C" />
+        android:title="@string/feature_three" />
+
 </menu>

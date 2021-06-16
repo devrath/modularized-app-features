@@ -3,12 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     tools:context=".FragmentE">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Fragment E" />
+        android:gravity="center"
+        android:text="@string/feature_three_nfragment_e"
+        android:textSize="40sp" />
 
 </FrameLayout>
