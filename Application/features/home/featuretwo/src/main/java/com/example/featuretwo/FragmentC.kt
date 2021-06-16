@@ -7,8 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.base.BaseFragment
 import com.example.featuretwo.R
+import com.example.featuretwo.databinding.FragmentCBinding
 
-class FragmentC : BaseFragment() {
+class FragmentC : BaseFragment<FragmentCBinding>(FragmentCBinding::inflate) {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

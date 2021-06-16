@@ -9,20 +9,14 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.base.BaseFragment
 import com.example.featureone.R
+import com.example.featureone.databinding.FragmentABinding
+import com.example.featureone.databinding.FragmentABinding.inflate
 
-class FragmentA : BaseFragment() {
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_a, container, false)
-    }
+class FragmentA : BaseFragment<FragmentABinding>(FragmentABinding::inflate) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        view.setOnClickListener {
+        binding.switchId.setOnClickListener {
             val uri = Uri.parse("myApp://fragmentD")
             findNavController().navigate(uri)
         }
