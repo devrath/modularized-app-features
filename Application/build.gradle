@@ -31,6 +31,9 @@ buildscript {
             // leak-canary version
             'leakcanary'                  : '2.7',
 
+            // Navigation
+            'navigation'                  : '2.3.5',
+
     ]
 
 

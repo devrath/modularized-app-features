@@ -17,6 +17,10 @@
             <option value="$PROJECT_DIR$/core/network" />
             <option value="$PROJECT_DIR$/features" />
             <option value="$PROJECT_DIR$/features/base" />
+            <option value="$PROJECT_DIR$/features/home" />
+            <option value="$PROJECT_DIR$/features/home/featureone" />
+            <option value="$PROJECT_DIR$/features/home/featurethree" />
+            <option value="$PROJECT_DIR$/features/home/featuretwo" />
             <option value="$PROJECT_DIR$/features/login" />
             <option value="$PROJECT_DIR$/features/movies" />
           </set>

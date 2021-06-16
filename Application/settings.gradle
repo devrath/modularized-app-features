@@ -1,3 +1,7 @@
+include ':features:home:featurethree'
+include ':features:home:featuretwo'
+include ':features:home:featureone'
+include ':features:home'
 include ':features:movies'
 include ':app'
 

@@ -1,5 +1,6 @@
 package com.example.login
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.lifecycle.ViewModelProvider
@@ -11,7 +12,7 @@ import java.lang.Exception
 class LoginActivity : BaseActivity() {
 
     companion object {
-        const val FEATURE_ON_BOARDING = "com.kienht.dagger.hilt.feature.FeatureActivity"
+        const val FEATURE_HOME_SCREEN = "com.example.home.HomeActivity"
     }
 
     private lateinit var binding: ActivityLoginBinding
@@ -30,15 +31,15 @@ class LoginActivity : BaseActivity() {
     }
 
     private fun onClickListeners() {
-       /* binding.buttonFeature.setOnClickListener {
+        binding.button.setOnClickListener {
             try {
-                *//*Class.forName(FEATURE_ON_BOARDING)?.let { feature ->
-                    Timber.d("Launch activity$feature")
-                }*//*
+                Class.forName(FEATURE_HOME_SCREEN)?.let { feature ->
+                    startActivity(Intent(this@LoginActivity, feature))
+                }
             }catch (exception : Exception){
                 Timber.e("Error in launching feature: $exception")
             }
-        }*/
+        }
     }
 
     private fun setContentForScreen() {

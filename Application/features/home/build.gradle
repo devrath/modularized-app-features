@@ -1,9 +1,9 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'kotlin-android'
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
-    id 'androidx.navigation.safeargs.kotlin'
+    id 'kotlin-android-extensions'
 }
 
 android {
@@ -11,13 +11,13 @@ android {
     buildToolsVersion versions.buildtools
 
     defaultConfig {
-        applicationId "com.example.code"
         minSdkVersion versions.minSdk
         targetSdkVersion versions.targetAndCompileSdk
         versionCode versions.versionCode
         versionName versions.versionName
-        multiDexEnabled true
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -40,17 +40,19 @@ android {
 
 dependencies {
 
-    implementation project(":features:login")
+    implementation project(":features:base")
+    implementation project(":features:home:featureone")
+    implementation project(":features:home:featuretwo")
+    implementation project(":features:home:featurethree")
 
-    // Animation
-    implementation 'com.github.hajiyevelnur92:intentanimation:1.0'
-
-    // application dependencies
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation "androidx.core:core-ktx:$versions.coreKtx"
     implementation "androidx.appcompat:appcompat:$versions.appcompat"
     implementation "com.google.android.material:material:$versions.material"
-    implementation "androidx.constraintlayout:constraintlayout:$versions.constraintLayout"
+
+    // Navigation
+    implementation "androidx.navigation:navigation-fragment-ktx:$versions.navigation"
+    implementation "androidx.navigation:navigation-ui-ktx:$versions.navigation"
 
     // Unit testing
     testImplementation 'junit:junit:4.+'
@@ -63,22 +65,9 @@ dependencies {
     implementation "com.google.dagger:hilt-android:$hilt_version"
     kapt "com.google.dagger:hilt-compiler:$hilt_version"
 
-    // Navigation
-    implementation "androidx.navigation:navigation-fragment-ktx:$navigation_safe_args_version"
-    implementation "androidx.navigation:navigation-ui-ktx:$navigation_safe_args_version"
-    implementation "androidx.navigation:navigation-dynamic-features-fragment:$navigation_safe_args_version"
-
-    // Life cycle
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$versions.lifecycle"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.lifecycle"
-    implementation "androidx.lifecycle:lifecycle-common-java8:$versions.lifecycle"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$versions.lifecycle"
-
     // Timber
     implementation "com.jakewharton.timber:timber:$versions.timber"
 
     // Leak canary
     debugImplementation "com.squareup.leakcanary:leakcanary-android:$versions.leakcanary"
-
-    implementation 'androidx.multidex:multidex:2.0.1'
 }
