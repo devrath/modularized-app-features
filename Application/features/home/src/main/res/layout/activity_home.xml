@@ -22,7 +22,7 @@
         android:id="@+id/btm_nav_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/white"
+        android:background="@color/colorPrimaryDark"
         app:itemIconTint="@android:color/black"
         app:itemTextColor="@android:color/black"
         app:labelVisibilityMode="labeled"
