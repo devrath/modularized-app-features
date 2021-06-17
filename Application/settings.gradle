@@ -7,8 +7,6 @@ include ':features:movies'
 include ':app'
 
 include ':core'
-include ':core:models'
-include ':core:network'
 
 include ':features'
 include ':features:base'
