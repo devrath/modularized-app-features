@@ -1,8 +1,25 @@
 # modularized-app-features
-This project describes how to use multi modules in android application
+This project describes how to set up the project using multi-module approach and nesting relevant structures based on the functionality.
 
 <p align="center">
+<a><img src="https://img.shields.io/badge/Built%20Using-Kotlin-silver?style=for-the-badge&logo=kotlin"></a>
+<a><img src="https://img.shields.io/badge/Built%20By-Android%20Studio-red?style=for-the-badge&logo=android%20studio"></a>  
+<a><img src="https://img.shields.io/badge/Jetpack%20Tool-Navigation-teal?style=for-the-badge&logo=tools"></a>  
+<a><img src="https://img.shields.io/badge/Structure-Multi%20module-salmon?style=for-the-badge&logo=tools"></a>   
+</p>
+
+## Structure
+<p align="center">
   <img src="https://github.com/devrath/modularized-app-features/blob/main/Assets/structure.png">
+</p>
+
+
+## Output
+<p align="center">
+  <img width=200 height=380 src="https://github.com/devrath/modularized-app-features/blob/main/Assets/1.png">
+  <img width=200 height=380 src="https://github.com/devrath/modularized-app-features/blob/main/Assets/2.png">
+  <img width=200 height=380 src="https://github.com/devrath/modularized-app-features/blob/main/Assets/3.png">
+  <img width=200 height=380 src="https://github.com/devrath/modularized-app-features/blob/main/Assets/4.png">
 </p>
 
 ### Modular approach
