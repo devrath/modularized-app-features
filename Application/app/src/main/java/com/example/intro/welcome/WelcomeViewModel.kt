@@ -1,4 +1,4 @@
-package com.example.core.welcome
+package com.example.intro.welcome
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

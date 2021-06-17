@@ -1,11 +1,11 @@
-package com.example.core.welcome
+package com.example.intro.welcome
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
-import com.example.core.databinding.ActivitySplashBinding
+import com.example.intro.databinding.ActivitySplashBinding
 import dagger.hilt.android.AndroidEntryPoint
 import timber.log.Timber
 

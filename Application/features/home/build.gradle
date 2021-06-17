@@ -45,17 +45,32 @@ dependencies {
     implementation project(":features:home:featuretwo")
     implementation project(":features:home:featurethree")
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation "androidx.core:core-ktx:$versions.coreKtx"
-    implementation "androidx.appcompat:appcompat:$versions.appcompat"
-    implementation "com.google.android.material:material:$versions.material"
-
     // Navigation
     implementation "androidx.navigation:navigation-fragment-ktx:$versions.navigation"
     implementation "androidx.navigation:navigation-ui-ktx:$versions.navigation"
 
+    // Base-essentials
+    implementation "androidx.appcompat:appcompat:$versions.appcompat"
+    implementation "com.google.android.material:material:$versions.material"
+    implementation "androidx.fragment:fragment-ktx:$versions.fragmentktx"
+    implementation "androidx.activity:activity-ktx:$versions.activityktx"
+
+    // Kotlin-essentials
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation "androidx.core:core-ktx:$versions.coreKtx"
+
+    // Co-Routines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$versions.coroutines"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$versions.coroutines"
+
+    // Life-Cycle
+    implementation  "androidx.lifecycle:lifecycle-common-java8:$versions.lifecycle"
+    implementation  "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.lifecycle"
+    implementation  "androidx.lifecycle:lifecycle-livedata-ktx:$versions.lifecycle"
+    implementation  "androidx.lifecycle:lifecycle-extensions:$versions.lifecycleExtensions"
+
     // Unit testing
-    testImplementation 'junit:junit:4.+'
+    testImplementation "junit:junit:$versions.junit"
 
     // Instrumentation testing
     androidTestImplementation "androidx.test.ext:junit:$versions.extJunit"
@@ -68,6 +83,4 @@ dependencies {
     // Timber
     implementation "com.jakewharton.timber:timber:$versions.timber"
 
-    // Leak canary
-    debugImplementation "com.squareup.leakcanary:leakcanary-android:$versions.leakcanary"
 }
