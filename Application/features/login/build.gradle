@@ -42,6 +42,16 @@ dependencies {
     implementation project(":features:base")
     implementation project(":features:home")
 
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$versions.coroutines"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$versions.coroutines"
+    implementation  "androidx.lifecycle:lifecycle-common-java8:$versions.lifecycle"
+    implementation  "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.lifecycle"
+    implementation  "androidx.lifecycle:lifecycle-livedata-ktx:$versions.lifecycle"
+    implementation  "androidx.lifecycle:lifecycle-extensions:$versions.lifecycleExtensions"
+    implementation "androidx.fragment:fragment-ktx:$versions.fragmentktx"
+    implementation "androidx.activity:activity-ktx:$versions.activityktx"
+
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation "androidx.core:core-ktx:$versions.coreKtx"
     implementation "androidx.appcompat:appcompat:$versions.appcompat"

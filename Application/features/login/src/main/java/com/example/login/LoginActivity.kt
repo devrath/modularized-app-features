@@ -3,13 +3,16 @@ package com.example.login
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.lifecycle.ViewModelProvider
-import com.example.base.BaseActivity
 import com.example.login.databinding.ActivityLoginBinding
+import dagger.hilt.android.AndroidEntryPoint
 import timber.log.Timber
 import java.lang.Exception
 
-class LoginActivity : BaseActivity() {
+@AndroidEntryPoint
+class LoginActivity : AppCompatActivity() {
 
     companion object {
         const val FEATURE_HOME_SCREEN = "com.example.home.HomeActivity"
