@@ -49,6 +49,11 @@ buildscript {
             // Activity Version
             'activityktx'                 : '1.2.3',
 
+
+            // Network Version
+            'retrofit'                    : '2.9.0',
+            'okHttpLoggingInterceptor'    : '4.9.0',
+
     ]
 
 
