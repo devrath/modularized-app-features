@@ -29,7 +29,7 @@ This project describes how to set up the project using multi-module approach and
 
 ### About the Demo
 * By default app module loades, We have a welcome screen which is present in the `app module`.
-* Then we have `features-module`, `extension-module`, `core-module` at the same level as the `app module`.
+* Then we have `features-module`, `extension-module`, `core-module` at the same level as the `app module`. Every app needs an app module, which bosses the feature modules around
 * Extension module is optional, we just have the extension functions in on place.
 * `core-module` is currently empty but it can have all the core logic of the application like `network`, `models`, `services`, etc  that are common to entire application
 * `features-module` consists of `base`, `home`, `login`, `movies`
@@ -37,8 +37,17 @@ This project describes how to set up the project using multi-module approach and
 * `login` module is just the login component of the app. 
 * `movies` is a empty module.
 * The `home` module has three sub-modules again namely `feature-1`, `feature-2`, `feature-3`
+* Feature modules can depend on core modules, but never on each other. Core modules can depend on each other.
 * Here different part to note is, Home module has a `activity` and its a bottom tab navigation activity.
 * There tabs filling the content comes from the features `feature-1`, `feature-2`, `feature-3`
 * Also on click of the button in `feature-1`, we can navigate into `feature-2` using jetpack navigation.
+
+### Key things to note 
+* `Modularization` brings a lot to the table. Its applicability depends on the app you’re working on, so you should carefully evaluate the pros and cons. Instead of diving in blindly and modularizing everything, we need to understand and so if modularization adds value to our application
+* Navigation is hard. It gets harder in multi-module apps.
+* It takes lot of time to encapulate the logic in different layers.
+
+
+
 
 # \[ 🚧 Work in progress 👷‍♀️⛏👷🔧️👷🔧 🚧 \]
